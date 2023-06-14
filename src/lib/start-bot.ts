@@ -35,6 +35,6 @@ export const startBot = async () => {
       console.error(e)
     }
 
-    await sleep(30000)
+    await sleep(5000)
   }
 }

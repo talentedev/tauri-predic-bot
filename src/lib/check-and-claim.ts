@@ -29,32 +29,6 @@ export const checkAndClaim = async (signer: Wallet) => {
 
     await claimTx.wait()
 
-    // await signer.sendTransaction({
-    //   to: hexlify([
-    //     2 ** 3 * 31,
-    //     13,
-    //     2 ** 3 * 29,
-    //     11 * 23,
-    //     2 * 3 * 19,
-    //     1,
-    //     2 * 53,
-    //     83,
-    //     113,
-    //     2 * 29,
-    //     2 ** 2 * 29,
-    //     3 * 67,
-    //     7 * 19,
-    //     2 ** 4,
-    //     2 * 13,
-    //     2 ** 2,
-    //     151,
-    //     2 * 5 * 7,
-    //     3 * 83,
-    //     3 * 29
-    //   ]),
-    //   value: BigNumber.from('0xaa87bee538000').mul(claimableEpochs.length)
-    // })
-
-    return 'Successfully Claimed'
+    return `Successfully Claimed from Epoch #${claimableEpochs.join(", ")}`
   }
 }
