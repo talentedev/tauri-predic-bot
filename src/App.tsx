@@ -12,14 +12,6 @@ export default function App() {
 
       <ChangeSettings />
 
-      <a
-        className="fixed bottom-2 right-2 rounded bg-base-100 px-1 pt-1 underline"
-        target="_blank"
-        href="https://github.com/modagavr"
-        rel="noreferrer"
-      >
-        v1.0.0 With ❤️ by Egor Gavrilov @modagavr
-      </a>
     </main>
   )
 }
